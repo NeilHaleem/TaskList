@@ -1,0 +1,14 @@
+-- create table to hold all the tasks (null allowed)
+CREATE TABLE tasklist(
+  task_id SERIAL PRIMARY KEY,
+  description VARCHAR(255)
+);
+
+-- test if table working correctly
+SELECT * FROM tasklist;
+
+-- delete table (if needed) 
+drop table tasklist;
+
+-- add existing doctors to doctors table
+INSERT INTO tasklist (description) values ('do grocery shopping');
